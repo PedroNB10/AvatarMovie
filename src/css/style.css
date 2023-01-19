@@ -14,6 +14,10 @@ body{
     height: 100%;
 }
 
+video{
+    width: 100%;
+}
+
 .content{
   position: fixed;
   bottom: 0;
