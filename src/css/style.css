@@ -55,19 +55,24 @@ li{
     font-weight: 600;
     font-size: 30px;
     cursor: pointer;
-    display: inline-block;
+    list-style: none;
     padding-right: 30px;
     transition: 0.3s;
+    display: inline;
+   
 }
 
 li:hover{
-   color:#0e004e ;
+   color:#0098c2 ;
     transition: 0.3s;
+    
 }
 
 
 ul{
     margin-left: 65vw;
+    
+    
 }
 
 
@@ -78,6 +83,7 @@ ul{
 }
 
 .imagem-titulo{
+    margin:0 15%;
     height: 30vh;
     
 }
@@ -116,7 +122,6 @@ button{
     border: none;
     background-color: #65C9E5;
     border-radius: 20px;
-
     transition: 0.5s;
 }
 
@@ -124,6 +129,7 @@ button:hover{
     background-color: #0e004e;
     color: white;
     transition: 0.5s;
+    transform: scale(1.1)
 }
 
 
@@ -168,6 +174,65 @@ button:hover{
 .modal.open {
     opacity: 1;
     visibility: visible;
+}
+
+@media (max-width: 1200px) {
+
+    .content{
+        overflow: scroll;
+    }
+    header
+    {
+        display: block;
+        text-align: center;
+    }
+    .logo{
+        width: 18%;
+        margin-left: 0;
+    }
+
+
+    ul{
+        margin-left: 0
+        
+    }
+
+    li {
+        display: inline;
+        padding-right:4px;
+        padding-left:4px;
+        font-size: 15px;
+    }
+    .imagem-titulo{ 
+        width: 75vw;
+        margin:0;
+    }
+    .container {
+        display: block; 
+    }
+
+    .avatar{
+        width: 50vw;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 3%;
+    }
+
+    .info{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    button{
+        width: 50%;
+    }
+
+
+
 }
 
 
