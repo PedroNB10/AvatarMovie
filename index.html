@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -42,13 +42,21 @@
             <div class="info">
                 <img class="imagem-titulo" src="./src/imgs/title.png" alt="title of the movie">
                 <p class="description">O Caminho da Água, um dos lançamentos cinematográficos mais aguardados de 2022, finalmente estreia nos cinemas a partir do dia 15 de dezembro no Brasil. Toda popularidade se deve ao fato de que o primeiro longa do projeto, disponível no Disney+, é o filme com a maior bilheteria da história do cinema, com mais de US$ 2,9 bilhões arrecadados (cerca de R$ 15,1 bilhões na cotação atual). </p>
-               <a href="https://youtu.be/x5pZI-DmtrE" target="_blank"><button>Veja o Trailer</button> </a>
+               <a  target="_blank"><button onclick="openModal()">Veja o Trailer</button> </a>
             </div>
             <img class="avatar" src="./src/imgs/avatar-characters.png" alt="">
         </main>
+
+        <div id="modal_id" class="modal">
+            <div class="content-modal">
+                <span class="closed-modal" onclick="removeModal()">X</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/x5pZI-DmtrE" title="Trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
     </div>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>

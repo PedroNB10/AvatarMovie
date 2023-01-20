@@ -87,6 +87,17 @@ ul{
     width: 70vw;
 }
 
+.avatar{
+    transition: 0.5s;
+    width: 60vw;
+}
+
+.avatar:hover{
+    transition: 0.5s;
+    transform: scale(1.1)
+}
+
+
 
 p{
     margin-left: 9vw;
@@ -116,6 +127,48 @@ button:hover{
 }
 
 
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 52, 50, 0.749);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.content-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.closed-modal {
+    background-color: #ffffff;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal iframe {
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.open {
+    opacity: 1;
+    visibility: visible;
+}
 
 
 
