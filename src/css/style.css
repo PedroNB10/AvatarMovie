@@ -204,18 +204,20 @@ button:hover{
         font-size: 15px;
     }
     .imagem-titulo{ 
-        width: 75vw;
-        margin:0;
+        margin:0 auto;
+        height: 13vh;
+        
+    
     }
     .container {
         display: block; 
     }
 
     .avatar{
-        width: 50vw;
+        width: 80vw;
         display: flex;
         margin: 0 auto;
-        margin-top: 3%;
+        margin-top: 25%;
     }
 
     .info{
@@ -228,6 +230,7 @@ button:hover{
     }
 
     button{
+        margin-left: 0;
         width: 50%;
     }
 
